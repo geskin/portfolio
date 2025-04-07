@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+a {
+    color: whitesmoke;
+    font-style: normal;
+    font-family: Inter;
+}

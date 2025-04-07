@@ -41,60 +41,65 @@ const ContactForm = ({ submitForm }) => {
     };
 
     return (
-        <Box display="flex" justifyContent="center" mt={5}>
-            <Card sx={{ width: 500, padding: 3 }}>
-                <CardContent>
-                    <Typography variant="h5" gutterBottom>
-                        Contact Form
-                    </Typography>
-                    <form onSubmit={gatherInput}>
-                        <TextField
-                            fullWidth
-                            margin="normal"
-                            label="Full Name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
-                        <TextField
-                            fullWidth
-                            margin="normal"
-                            label="Company"
-                            name="company"
-                            value={formData.company}
-                            onChange={handleChange}
-                            required
-                        />
-                        <TextField
-                            fullWidth
-                            margin="normal"
-                            label="LinkedIn (optional)"
-                            name="linkedIn"
-                            value={formData.linkedIn}
-                            onChange={handleChange}
-                        />
-                        <TextField
-                            fullWidth
-                            margin="normal"
-                            label="Email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                        />
-                        <Button
-                            type="submit"
-                            variant="contained"
-                            color="primary"
-                            fullWidth
-                            sx={{ mt: 2 }}
-                        >
-                            Submit
-                        </Button>
-                    </form>
-                </CardContent>
-            </Card>
-        </Box>
+        <>
+            <div>
+                <h4></h4>
+            </div>
+            <Box display="flex" justifyContent="center" mt={5}>
+                <Card sx={{ width: 500, padding: 3 }}>
+                    <CardContent>
+                        <Typography variant="h5" gutterBottom>
+                            Contact Form
+                        </Typography>
+                        <form onSubmit={gatherInput}>
+                            <TextField
+                                fullWidth
+                                margin="normal"
+                                label="Full Name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            <TextField
+                                fullWidth
+                                margin="normal"
+                                label="Company"
+                                name="company"
+                                value={formData.company}
+                                onChange={handleChange}
+                                required
+                            />
+                            <TextField
+                                fullWidth
+                                margin="normal"
+                                label="LinkedIn (optional)"
+                                name="linkedIn"
+                                value={formData.linkedIn}
+                                onChange={handleChange}
+                            />
+                            <TextField
+                                fullWidth
+                                margin="normal"
+                                label="Email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                            />
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                color="primary"
+                                fullWidth
+                                sx={{ mt: 2 }}
+                            >
+                                Submit
+                            </Button>
+                        </form>
+                    </CardContent>
+                </Card>
+            </Box>
+        </>
     );
 };
 

@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: lavender;
+  font-family: InterVariable, sans-serif;
+}
+
+section #intro {
+  padding-top: 50px;
 }
 
 /* @keyframes logo-spin {
@@ -14,6 +20,12 @@
     transform: rotate(360deg);
   }
 } */
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
