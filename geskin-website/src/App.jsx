@@ -63,7 +63,7 @@ function App() {
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Container sx={{ mt: 4 }}>
           {/* Intro Section */}
-          <section id="intro" className="h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
+          <section id="intro" className="text-black dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 max-w-5xl w-full">
               <img
                 src={portrait}
@@ -82,7 +82,7 @@ function App() {
           </section>
 
           {/* About Me */}
-          <section id="about" className="min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+          <section id="about" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
             <Typography variant="h4" gutterBottom>About Me</Typography>
             <Typography className="max-w-3xl text-center sm:text-left">
               I’m a software engineer with a background in neuroscience and behavior, driven by a deep passion for mental health advocacy and a commitment to building accessible, inclusive technologies that serve those most often overlooked. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
@@ -94,12 +94,12 @@ function App() {
           </section>
 
           {/* Projects */}
-          <section id="projects" className="min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" className='pt-10' gutterBottom>Projects</Typography>
+          <section id="projects" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+            <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Projects</Typography>
             <div className="max-w-3xl text-sm sm:text-base">
               <ul className="space-y-4">
                 <li>
-                  <strong><a href="https://transconnect.onrender.com/" target="_blank" rel="noopener noreferrer">TransConnect</a></strong>
+                  <strong><a href="https://transconnect.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>TransConnect</a></strong>
                   {' '}| <small><a href="https://github.com/geskin/transconnect-frontend/tree/master/transconnect" target="_blank" rel="noopener noreferrer">GitHub Frontend</a></small> | <small><a href="https://github.com/geskin/transconnect-backend" target="_blank" rel="noopener noreferrer">GitHub Backend</a></small>
                   <p className="italic mt-1">Full-stack application that allows users to find and submit resources for transgender individuals (such as hotlines, therapists, shelters, public restrooms, etc), make posts, and comment on posts to engage with the community!</p>
                   <ul className="list-disc ml-5 mt-1">
@@ -108,7 +108,7 @@ function App() {
                   </ul>
                 </li>
                 <li>
-                  <strong><a href="https://mentalgaming.onrender.com/" target="_blank" rel="noopener noreferrer">MentalGaming</a></strong> | <small><a href="https://github.com/geskin/MentalGaming" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+                  <strong><a href="https://mentalgaming.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>MentalGaming</a></strong> | <small><a href="https://github.com/geskin/MentalGaming" target="_blank" rel="noopener noreferrer">GitHub</a></small>
                   <p className="italic mt-1">Python/Flask-driven full-stack application that surveys users’ mental states before and after playing various browser games.</p>
                   <ul className="list-disc ml-5 mt-1">
                     <li><b>Frontend:</b> HTML, WTForms</li>
@@ -120,8 +120,8 @@ function App() {
           </section>
 
           {/* Skills */}
-          <section id="skills" className="min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" className='pt-10' gutterBottom>Skills</Typography>
+          <section id="skills" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+            <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Skills</Typography>
 
             <Box mt={4} className="text-center">
               <Typography variant="h6">Frontend</Typography>
@@ -165,7 +165,7 @@ function App() {
           </section>
 
           {/* Education */}
-          <section id="education" className="min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+          <section id="education" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
             <Typography variant="h4" gutterBottom>Education</Typography>
             <ul className="text-center sm:text-left space-y-2 text-sm sm:text-base">
               <li><strong>Barnard College, Columbia University</strong> - BA in Neuroscience and Behavior (2023)</li>
@@ -177,7 +177,7 @@ function App() {
           {/* Contact */}
           <section id="contact" className="min-h-screen snap-start flex flex-col justify-center items-center text-black px-4 sm:px-6 py-8 bg-[whitesmoke]">
             <div className="!text-black max-w-sm w-full text-center">
-              <Typography variant="h4" className='pt-10' gutterBottom>Contact Me!</Typography>
+              <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Contact Me!</Typography>
 
               <div className="text-black mb-4 text-left space-y-2 text-sm">
                 <div className="flex items-center space-x-2">

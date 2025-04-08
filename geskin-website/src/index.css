@@ -4,8 +4,6 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  /* color: #242424;
-  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,7 +47,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -62,25 +60,15 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-/* @import "~bootstrap/dist/css/bootstrap.css"; */
+} */
 
 body {
-  /* background: url(background.png); */
-  /* background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
   margin: 0;
-  /* display: flex; */
   place-items: center;
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background-image: linear-gradient(to right, lightpink, lightblue); */
-  /* padding: 0 0 30px 0; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, InterVariable, Inter, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

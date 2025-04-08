@@ -33,6 +33,10 @@ section #intro {
   }
 }
 
+.scroll-offset {
+  @apply scroll-mt-16 sm:scroll-mt-20;
+}
+
 .card {
   padding: 2em;
 }
