@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 export default function NavBarTW() {
     return (
-        <Disclosure as="nav" position="static" className="bg-gray-800 p-0.25 mt-0 fixed w-full z-10 top-0">
+        <Disclosure as="nav" className="bg-gray-800 p-0.1 mt-0 fixed w-full z-2 top-0">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">

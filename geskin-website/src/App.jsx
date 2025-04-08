@@ -22,8 +22,10 @@ import { BrowserRouter } from 'react-router-dom';
 import NavBarTW from './Navigation/NavBarTW';
 import React, { useState } from 'react';
 import { EnvelopeIcon, LinkIcon } from "@heroicons/react/24/solid";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import portrait from "./assets/portrait.jpg";
+import { FaLinkedin, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaNodeJs, FaGithub, FaBootstrap, FaFlask, FaGit } from "react-icons/fa";
+import { SiJquery, SiMui, SiTailwindcss, SiExpress, SiPostgresql, SiFlask, SiPrisma, SiJest, SiVitest, SiJasmine, SiSqlalchemy } from "react-icons/si";
+
 
 function App() {
   const [formData, setFormData] = useState({
@@ -106,8 +108,8 @@ function App() {
           <section id="about" className="h-screen snap-start flex flex-col justify-center items-center px-8">
             <Typography variant="h4" gutterBottom>About Me</Typography>
             <Typography>
-              Motivated software engineer and Barnard graduate currently shifting their career from research to software development.
-              Committed to advancing knowledge and contributing to the success of research initiatives.
+              I'm a motivated software engineer and Barnard graduate currently shifting their career from research to software development.
+              I'm eager to get started on my new career and committed to advancing knowledge while contributing to the success of my place of work.
             </Typography>
           </section>
 
@@ -117,13 +119,22 @@ function App() {
           <section id="projects" className="h-screen snap-start flex flex-col justify-center items-center px-8">
             <Typography variant="h4" gutterBottom>Projects</Typography>
             <ul>
-              <li><strong>TransConnect</strong> | GitHub Frontend | GitHub Backend</li>
-              <i>Prisma/React-driven full-stack application that allows users to find and submit resources for transgender individuals (such as hotlines, therapists, shelters, public restrooms, etc).</i>
+              <li><strong><a href="https://transconnect.onrender.com/" target="_blank"
+                rel="noopener noreferrer">TransConnect</a></strong> | <small><a>GitHub Frontend</a></small> | <small><a>GitHub Backend</a></small></li>
+              <i>Full-stack application that allows users to find and submit resources for transgender individuals (such as hotlines, therapists, shelters, public restrooms, etc), make posts, and comment on posts to engage with the community!</i>
+              <ul>
+                <li><b>Frontend:</b> React, JavaScript, Vite, mui</li>
+                <li><b>Backend:</b> Prisma, Node.js, Express.js, PostgreSQL, JSON web token, Bcrypt, Morgan</li>
+              </ul>
               <br />
               <li><strong>MentalGaming</strong> | GitHub</li>
               <i>Python/Flask-driven full-stack application that surveys users’ mental states before and after
                 playing various browser games.
               </i>
+              <ul>
+                <li><b>Frontend:</b> HTML, WTForms</li>
+                <li><b>Backend:</b> Python, Flask, SQLAlchemy</li>
+              </ul>
             </ul>
           </section>
 
@@ -136,47 +147,43 @@ function App() {
             {/* Frontend Skills */}
             <Box mt={4} className="text-center">
               <Typography variant="h6">Frontend</Typography>
-              <ul className="flex flex-wrap justify-center gap-4 mt-2">
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>jQuery</li>
-                <li>Mui</li>
-                <li>Bootstrap</li>
-                <li>Tailwind</li>
+              <ul className="flex flex-wrap justify-center gap-6 mt-2 text-4xl">
+                <li><FaReact title="React" /></li>
+                <li><FaJsSquare title="JavaScript" /></li>
+                <li><FaHtml5 title="HTML" /></li>
+                <li><FaCss3Alt title="CSS" /></li>
+                <li><SiJquery title="jQuery" /></li>
+                <li><SiMui title="Material UI" /></li>
+                <li><FaBootstrap title="Bootstrap" /></li>
+                <li><SiTailwindcss title="Tailwind" /></li>
               </ul>
             </Box>
 
             {/* Backend Skills */}
             <Box mt={4} className="text-center">
               <Typography variant="h6">Backend</Typography>
-              <ul className="flex flex-wrap justify-center gap-4 mt-2">
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Prisma</li>
-                <li>SQLAlchemy</li>
-                <li>Node-pg</li>
-                <li>SQL</li>
-                <li>Flask</li>
-                <li>Python</li>
-                <li>PostgreSQL</li>
+              <ul className="flex flex-wrap justify-center gap-6 mt-2 text-4xl">
+                <li><FaNodeJs title="Node.js" /></li>
+                <li><SiExpress title="Express.js" /></li>
+                <li><SiPrisma title="Prisma" /></li>
+                <li><SiSqlalchemy title="SQLAlchemy" /></li>
+                <li><FaFlask title="Flask" /></li>
+                <li><FaPython title="Python" /></li>
+                <li><SiPostgresql title="PostgreSQL" /></li>
               </ul>
             </Box>
 
             {/* Other Skills */}
             <Box mt={4} className="text-center">
               <Typography variant="h6">Others</Typography>
-              <ul className="flex flex-wrap justify-center gap-4 mt-2">
-                <li>VisualStudioCode</li>
-                <li>GitHub</li>
-                <li>WSL</li>
-                <li>Vitest</li>
-                <li>Jest</li>
-                <li>Git</li>
-                <li>Jasmine</li>
+              <ul className="flex flex-wrap justify-center gap-6 mt-2 text-4xl">
+                <li>VSCode</li>
+                <li><FaGithub title="GitHub" /></li>
+                <li><SiVitest title="Vitest" /></li>
+                <li><SiJest title="Jest" /></li>
+                <li><FaGit title="Git" /></li>
+                <li><SiJasmine title="Jasmine" /></li>
                 <li>MATLAB</li>
-                <li>C#</li>
               </ul>
             </Box>
           </section>
@@ -245,107 +252,91 @@ function App() {
           {/* <hr style={{ margin: '40px 0' }} /> */}
 
           {/* Contact Form */}
-          <section id="contact" className="h-screen snap-start flex flex-col justify-center items-center px-8 text-white">
-            <Typography variant="h4" gutterBottom>Contact Me!</Typography>
+          <section
+            id="contact"
+            className="h-screen snap-start flex flex-col justify-center items-center text-black px-8 bg-[whitesmoke] pt-18"
+          >
+            <div className="!text-black max-w-sm w-full text-center">
+              <Typography variant="h4" gutterBottom>Contact Me!</Typography>
 
-            <div className="mb-6 flex flex-col items-center">
-              <div className="flex items-center space-x-2">
-                <EnvelopeIcon className="w-5 h-5 text-blue-300" />
-                <a href="mailto:sg3584@alum.barnard.edu" className="text-blue-300">sg3584@alum.barnard.edu</a>
+              <div className="text-black mb-4 text-left space-y-2 text-sm">
+                <div className="flex items-center space-x-2">
+                  <EnvelopeIcon className="w-4 h-4 text-blue-500" />
+                  <a href="mailto:sg3584@alum.barnard.edu" className="!text-black hover:!text-blue-500" target="_blank"
+                    rel="noopener noreferrer">sg3584@alum.barnard.edu</a>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <FaLinkedin className="w-4 h-4 text-blue-500" />
+                  <a href="https://www.linkedin.com/in/ehretz-geskin/" className="!text-black hover:!text-blue-500" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <FaGithub className="w-4 h-4 text-blue-500" />
+                  <a href="https://github.com/geskin" className="!text-black hover:!text-blue-500" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                </div>
+
+                <div className="flex items-center space-x-2">
+                  <LinkIcon className="w-4 h-4 text-blue-500" />
+                  <a href="https://github.com/geskin/resume/blob/main/EhretzGeskinResume_Engineering.pdf" className="!text-black hover:!text-blue-500" target="_blank"
+                    rel="noopener noreferrer">Resume</a>
+                </div>
               </div>
 
-              <div className="flex items-center space-x-2 mt-2">
-                <FaLinkedin className="w-5 h-5 text-blue-300" />
-                <a href="https://www.linkedin.com/in/ehretz-geskin/" className="text-blue-300">LinkedIn</a>
-              </div>
-
-              <div className="flex items-center space-x-2 mt-2">
-                <FaGithub className="w-5 h-5 text-blue-300" />
-                <a href="https://github.com/YOUR_GITHUB_USERNAME" className="text-blue-300">GitHub</a>
-              </div>
-
-              <div className="flex items-center space-x-2 mt-2">
-                <LinkIcon className="w-5 h-5 text-blue-300" />
-                <a href="YOUR_RESUME_LINK" className="text-blue-300">Resume</a>
-              </div>
-            </div>
-
-            <Box
-              component="form"
-              onSubmit={handleSubmit}
-              sx={{
-                width: '100%',
-                maxWidth: '500px',
-                maxHeight: '200px',
-                bgcolor: 'transparent',
-                mt: 2
-              }}
-            >
-              <TextField
-                fullWidth
-                required
-                label="Name"
-                id="name"
-                name="name"
-                margin="normal"
-                className="text-white-300"
-                InputLabelProps={{ style: { color: 'white' } }}
-                InputProps={{ style: { color: 'white' } }}
-              />
-              <TextField
-                fullWidth
-                required
-                label="Email"
-                type="email"
-                id="email"
-                name="user-email"
-                margin="normal"
-                InputLabelProps={{ style: { color: 'white' } }}
-                InputProps={{ style: { color: 'white' } }}
-              />
-              {/* <FormControl fullWidth margin="normal" required>
-                <InputLabel id="contact-reason-label" style={{ color: 'white' }}>Reason for contact</InputLabel>
-                <Select
-                  labelId="contact-reason-label"
-                  id="contact-reason"
-                  name="contact-reason"
-                  label="Reason for contact"
-                  sx={{ color: 'white', borderColor: 'white' }}
-                >
-                  <MenuItem value=""><em>None</em></MenuItem>
-                  <MenuItem value="Job offer">Job Offer</MenuItem>
-                  <MenuItem value="Collaboration">Collaboration</MenuItem>
-                  <MenuItem value="Inquiry">Inquiry</MenuItem>
-                  <MenuItem value="Other">Other (specify in message)</MenuItem>
-                </Select>
-              </FormControl> */}
-              <TextField
-                fullWidth
-                required
-                labelId="message-label"
-                id="message"
-                label="Message"
-                name="message"
-                multiline
-                rows={4}
-                margin="normal"
-                placeholder="Please type your message here"
-                sx={{ color: 'white', borderColor: 'white' }}
-                InputLabel={{ style: { color: 'white' } }}
-                Input={{ style: { color: 'white' } }}
-              />
-              <Button
-                type="submit"
-                variant="contained"
-                // color="primary"
-                className='flex items-center bg-gray-800'
-              // sx={{ mt: 2, mb: 6 }}
+              <Box
+                component="form"
+                onSubmit={handleSubmit}
+                sx={{
+                  width: '100%',
+                  bgcolor: 'transparent',
+                  mt: 1
+                }}
               >
-                Send Message
-              </Button>
-            </Box>
+                <TextField
+                  fullWidth
+                  required
+                  label="Name"
+                  id="name"
+                  name="name"
+                  size="small"
+                  margin="dense"
+                />
+                <TextField
+                  fullWidth
+                  required
+                  label="Email"
+                  type="email"
+                  id="email"
+                  name="user-email"
+                  size="small"
+                  margin="dense"
+                />
+                <TextField
+                  fullWidth
+                  required
+                  label="Message"
+                  id="message"
+                  name="message"
+                  multiline
+                  rows={3}
+                  size="small"
+                  margin="dense"
+                  placeholder="Your message"
+                />
+                <Button
+                  type="submit"
+                  variant="contained"
+                  className="mt-3 bg-gray-800 text-white"
+                  size="small"
+                  fullWidth
+                >
+                  Send
+                </Button>
+              </Box>
+            </div>
           </section>
-
 
           <br style={{ margin: '40px 0' }} />
 

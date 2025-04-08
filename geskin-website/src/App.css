@@ -40,3 +40,11 @@ section #intro {
 .read-the-docs {
   color: #888;
 }
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
