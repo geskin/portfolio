@@ -42,18 +42,15 @@ function App() {
       message: e.target.message.value,
     });
 
-    const res = await fetch('http://localhost:3001/send-email', {
+    console.debug(formData);
+
+    const res = await fetch('https://portfolio-backend-nlke.onrender.com/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
     });
 
     if (res.ok) {
-      setFormData({
-        name: "",
-        email: "",
-        message: ""
-      });
       alert('Message sent!');
     } else {
       alert('Failed to send message.');
