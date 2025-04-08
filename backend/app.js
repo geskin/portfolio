@@ -7,20 +7,20 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
-    const { name, email, reason, message } = req.body;
+    const { name, email, message } = req.body;
 
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
             user: 'sg3584@alum.barnard.edu',
-            pass: 'yjnr oktz fmci npad', // use app password
+            pass: 'yjnr oktz fmci npad',
         },
     });
 
     const mailOptions = {
         from: email,
         to: 'sg3584@alum.barnard.edu',
-        subject: `New contact form: ${reason}`,
+        subject: `New Contact From Portfolio Website`,
         text: `From: ${name} (${email})\n\n${message}`,
     };
 
