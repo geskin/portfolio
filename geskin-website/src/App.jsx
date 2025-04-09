@@ -63,7 +63,7 @@ function App() {
       <div className="h-screen no-scrollbar overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Container sx={{ mt: 4 }}>
           {/* Intro Section */}
-          <section id="intro" className="text-black dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
+          <section id="intro" className="text-white dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 max-w-5xl w-full">
               <img
                 src={portrait}
@@ -81,7 +81,7 @@ function App() {
           </section>
 
           {/* About Me Section */}
-          <section id="about" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+          <section id="about" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
             <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
             <Typography className="max-w-3xl text-center sm:text-left">
               I’m a software engineer with a background in neuroscience and behavior, driven by a deep passion for mental health advocacy and a commitment to building accessible, inclusive technologies that serve those most often overlooked. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
@@ -93,7 +93,7 @@ function App() {
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
+          <section id="projects" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" className='pt-10 sm:pt-0' gutterBottom>Projects</Typography>
             <div className="max-w-3xl text-sm sm:text-base">
               <ul className="space-y-4">
@@ -119,7 +119,7 @@ function App() {
           </section>
 
           {/* Skills Section */}
-          <section id="skills" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
+          <section id="skills" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" className='pt-10 sm:pt-2' gutterBottom>Skills</Typography>
 
             <Box mt={4} className="text-center">
@@ -164,7 +164,7 @@ function App() {
           </section>
 
           {/* Education Section */}
-          <section id="education" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
+          <section id="education" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" gutterBottom>Education</Typography>
             <ul className="text-center sm:text-left space-y-2 text-sm sm:text-base">
               <li><strong>Barnard College, Columbia University</strong> - BA in Neuroscience and Behavior (2023)</li>
