@@ -60,7 +60,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBarTW />
-      <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+      <div className="h-screen no-scrollbar overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Container sx={{ mt: 4 }}>
           {/* Intro Section */}
           <section id="intro" className="text-black dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
@@ -83,7 +83,7 @@ function App() {
 
           {/* About Me */}
           <section id="about" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" gutterBottom>About Me</Typography>
+            <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
             <Typography className="max-w-3xl text-center sm:text-left">
               I’m a software engineer with a background in neuroscience and behavior, driven by a deep passion for mental health advocacy and a commitment to building accessible, inclusive technologies that serve those most often overlooked. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
             </Typography>
@@ -95,7 +95,7 @@ function App() {
 
           {/* Projects */}
           <section id="projects" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Projects</Typography>
+            <Typography variant="h4" className='pt-10 sm:pt-2' gutterBottom>Projects</Typography>
             <div className="max-w-3xl text-sm sm:text-base">
               <ul className="space-y-4">
                 <li>
@@ -121,7 +121,7 @@ function App() {
 
           {/* Skills */}
           <section id="skills" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Skills</Typography>
+            <Typography variant="h4" className='pt-10 sm:pt-2' gutterBottom>Skills</Typography>
 
             <Box mt={4} className="text-center">
               <Typography variant="h6">Frontend</Typography>
@@ -177,7 +177,7 @@ function App() {
           {/* Contact */}
           <section id="contact" className="min-h-screen snap-start flex flex-col justify-center items-center text-black px-4 sm:px-6 py-8 bg-[whitesmoke]">
             <div className="!text-black max-w-sm w-full text-center">
-              <Typography variant="h4" className='pt-10 sm:pt-4' gutterBottom>Contact Me!</Typography>
+              <Typography variant="h4" className='sm:pt-2' gutterBottom>Contact Me!</Typography>
 
               <div className="text-black mb-4 text-left space-y-2 text-sm">
                 <div className="flex items-center space-x-2">

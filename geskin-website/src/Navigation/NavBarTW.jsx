@@ -24,9 +24,9 @@ export default function NavBarTW() {
     };
 
     return (
-        <nav className="bg-gray-800 p-0.1 mt-0 fixed w-full z-2 top-0">
-            <div className="mx-auto max-w-7xl px-2 sm:px-2 lg:px-8">
-                <div className="relative flex h-16 items-center justify-between">
+        <nav className="bg-gray-800 w-screen left-0 fixed top-0 z-50">
+            <div className="sm:px-2 lg:px-4">
+                <div className="relative flex h-12 items-center justify-between">
                     {/* Mobile menu button */}
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         <button

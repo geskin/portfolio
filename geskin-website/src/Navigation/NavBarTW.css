@@ -5,3 +5,8 @@ a {
     font-style: normal;
     font-family: Inter;
 }
+
+nav {
+    margin: 0px;
+    padding-left: 0px;
+}
