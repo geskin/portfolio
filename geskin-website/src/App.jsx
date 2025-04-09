@@ -63,14 +63,13 @@ function App() {
       <div className="h-screen no-scrollbar overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <Container sx={{ mt: 4 }}>
           {/* Intro Section */}
-          <section id="intro" className="text-black dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900 sm:!py-4 sm:!pt-0 sm:!mt-0">
+          <section id="intro" className="text-black dark:text-white h-screen snap-start flex justify-center items-center px-4 sm:px-6 bg-white dark:bg-gray-900">
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 max-w-5xl w-full">
               <img
                 src={portrait}
                 alt="My Portrait"
                 className="w-32 h-32 sm:w-40 sm:h-40 md:w-60 md:h-60 object-cover rounded-2xl shadow-lg"
               />
-
               <div className="text-center md:text-left text-black dark:text-white">
                 <h2 className="text-lg sm:text-xl font-medium">Hello! I'm</h2>
                 <h1 className="text-2xl sm:text-4xl font-bold mt-1 sm:mt-2">Ehretz Geskin</h1>
@@ -81,8 +80,8 @@ function App() {
             </div>
           </section>
 
-          {/* About Me */}
-          <section id="about" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 sm:!py-4 sm:!pt-0 sm:!mt-0 py-8">
+          {/* About Me Section */}
+          <section id="about" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
             <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
             <Typography className="max-w-3xl text-center sm:text-left">
               I’m a software engineer with a background in neuroscience and behavior, driven by a deep passion for mental health advocacy and a commitment to building accessible, inclusive technologies that serve those most often overlooked. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
@@ -93,8 +92,8 @@ function App() {
             </Typography>
           </section>
 
-          {/* Projects */}
-          <section id="projects" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 sm:!py-4 sm:!pt-0 sm:!mt-0 py-4">
+          {/* Projects Section */}
+          <section id="projects" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" className='pt-10 sm:pt-0' gutterBottom>Projects</Typography>
             <div className="max-w-3xl text-sm sm:text-base">
               <ul className="space-y-4">
@@ -119,8 +118,8 @@ function App() {
             </div>
           </section>
 
-          {/* Skills */}
-          <section id="skills" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 sm:!py-4 sm:!pt-0 sm:!mt-0 py-4">
+          {/* Skills Section */}
+          <section id="skills" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" className='pt-10 sm:pt-2' gutterBottom>Skills</Typography>
 
             <Box mt={4} className="text-center">
@@ -164,8 +163,8 @@ function App() {
             </Box>
           </section>
 
-          {/* Education */}
-          <section id="education" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 sm:!py-4 sm:!pt-0 sm:!mt-0 py-4">
+          {/* Education Section */}
+          <section id="education" className="text-black dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" gutterBottom>Education</Typography>
             <ul className="text-center sm:text-left space-y-2 text-sm sm:text-base">
               <li><strong>Barnard College, Columbia University</strong> - BA in Neuroscience and Behavior (2023)</li>
@@ -174,8 +173,8 @@ function App() {
             </ul>
           </section>
 
-          {/* Contact */}
-          <section id="contact" className="min-h-screen snap-start flex flex-col justify-center items-center text-black px-4 sm:px-6 sm:!py-4 sm:!pt-0 sm:!mt-0 py-4 bg-[whitesmoke]">
+          {/* Contact Section */}
+          <section id="contact" className="min-h-screen snap-start flex flex-col justify-center items-center text-black px-4 sm:px-6 py-4 bg-[whitesmoke]">
             <div className="!text-black max-w-sm w-full text-center">
               <Typography variant="h4" className='sm:pt-0 md:pt-6' gutterBottom>Contact Me!</Typography>
 
