@@ -33,14 +33,18 @@ function App() {
     email: "",
     message: ""
   });
+  const [messageSent, setMessageSent] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((data) => ({
+      ...data,
+      [name]: value
+    }));
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({
-      name: e.target.name.value,
-      email: e.target['user-email'].value,
-      message: e.target.message.value,
-    });
 
     console.debug(formData);
 
@@ -50,10 +54,12 @@ function App() {
       body: JSON.stringify(formData),
     });
 
-    if (res.ok) {
-      alert('Message sent!');
+    if (res.ok && formData.name !== "") {
+      setMessageSent("Message sent!");
+      setTimeout(() => setMessageSent(false), 20000);
+      setFormData({ name: "", email: "", message: "" });
     } else {
-      alert('Failed to send message.');
+      setMessageSent("Failed to send message");
     }
   };
 
@@ -84,11 +90,11 @@ function App() {
           <section id="about" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
             <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
             <Typography className="max-w-3xl text-center sm:text-left">
-              I’m a software engineer with a background in neuroscience and behavior, driven by a deep passion for mental health advocacy and a commitment to building accessible, inclusive technologies that serve those most often overlooked. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
+              I’m a junior software engineer with a background in neuroscience and behavior commited to building accessible, inclusive full-stack applications. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
             </Typography>
             <br />
             <Typography className="max-w-3xl text-center sm:text-left">
-              Through my experience with full-stack development, I’ve gained the skills to build the tools I wish existed—platforms that promote emotional well-being, foster community, and center the needs of marginalized populations. I bring a unique blend of technical skill, scientific training, artistic sensibility, and empathy to everything I build. My goal is to leave behind a legacy of technology that uplifts, connects, and cares.
+              Throughout my experience with full-stack development, I’ve gained the skills to build the tools I wish existed—platforms that promote emotional well-being, foster community, and center the needs of marginalized populations. I bring a unique blend of technical skill, scientific training, artistic sensibility, and empathy to everything I build. My goal is to leave behind a legacy of technology that uplifts, connects, and cares.
             </Typography>
           </section>
 
@@ -209,12 +215,18 @@ function App() {
                   mt: 1
                 }}
               >
+                {messageSent && (
+                  <p className="text-blue-600 text-sm font-medium mb-2">{messageSent}</p>
+                )}
+
                 <TextField
                   fullWidth
                   required
                   label="Name"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   size="small"
                   margin="dense"
                 />
@@ -224,7 +236,9 @@ function App() {
                   label="Email"
                   type="email"
                   id="email"
-                  name="user-email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   size="small"
                   margin="dense"
                 />
@@ -234,6 +248,8 @@ function App() {
                   label="Message"
                   id="message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   multiline
                   rows={3}
                   size="small"
