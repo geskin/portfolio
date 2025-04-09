@@ -13,7 +13,7 @@ app.post('/send-email', async (req, res) => {
         service: 'Gmail',
         auth: {
             user: 'sg3584@alum.barnard.edu',
-            pass: process.env.pass,
+            pass: process.env.EMAIL_PASS,
         },
     });
 
