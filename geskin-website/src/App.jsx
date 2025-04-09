@@ -22,7 +22,7 @@ import { BrowserRouter } from 'react-router-dom';
 import NavBarTW from './Navigation/NavBarTW';
 import React, { useState } from 'react';
 import { EnvelopeIcon, LinkIcon } from "@heroicons/react/24/solid";
-import portrait from "./assets/portrait.jpg";
+import portrait from "./assets/portrait.jpeg";
 import { FaLinkedin, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaPython, FaNodeJs, FaGithub, FaBootstrap, FaFlask, FaGit } from "react-icons/fa";
 import { SiJquery, SiMui, SiTailwindcss, SiExpress, SiPostgresql, SiFlask, SiPrisma, SiJest, SiVitest, SiJasmine, SiSqlalchemy } from "react-icons/si";
 
@@ -45,8 +45,6 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.debug(formData);
 
     const res = await fetch('https://portfolio-backend-nlke.onrender.com/send-email', {
       method: 'POST',
