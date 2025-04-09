@@ -13,7 +13,7 @@ const PORT = +process.env.PORT || 3001;
 //
 // WJB: Evaluate in 2021 if this should be increased to 13 for non-test use
 
-console.log("TransConnect Config:".green);
+console.log("Portfolio Config:".green);
 console.log("SECRET_KEY:".yellow, SECRET_KEY);
 console.log("PORT:".yellow, PORT.toString());
 console.log("---");
