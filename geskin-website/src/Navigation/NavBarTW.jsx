@@ -75,27 +75,42 @@ export default function NavBarTW() {
                             /></a>
                         </div>
                         {/* Navigation for desktop */}
-                        <div className="hidden sm:ml-6 sm:flex items-center space-x-4">
-                            <a
-                                href="#intro"
-                                className="text-gray-300 hover:text-white hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium"
-                            >
-                                EHRETZ GESKIN
-                            </a>
-                            {navigation.map((item) => (
+                        <div className="hidden sm:flex items-center justify-between w-full">
+                            {/* Left side: Brand and nav links */}
+                            <div className="sm:ml-6 flex items-center space-x-4">
                                 <a
-                                    key={item.name}
-                                    href={item.href}
-                                    aria-current={item.current ? 'page' : undefined}
-                                    className={`${item.current
-                                        ? 'bg-gray-900 text-white'
-                                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-                                        } rounded-md px-3 py-2 text-sm font-medium`}
+                                    href="#intro"
+                                    className="text-gray-300 hover:text-white hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium"
                                 >
-                                    {item.name}
+                                    EHRETZ GESKIN
                                 </a>
-                            ))}
+                                {navigation.map((item) => (
+                                    <a
+                                        key={item.name}
+                                        href={item.href}
+                                        aria-current={item.current ? 'page' : undefined}
+                                        className={`${item.current
+                                            ? 'bg-gray-900 text-white'
+                                            : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                                            } rounded-md px-3 py-2 text-sm font-medium`}
+                                    >
+                                        {item.name}
+                                    </a>
+                                ))}
+                            </div>
+
+                            {/* Right side: Resume link */}
+                            <div className="ml-auto">
+                                <a
+                                    href="https://www.dropbox.com/scl/fi/uaawg9dbgb795pziyh055/EhretzGeskinResume_tech-1.pdf?rlkey=pynjx2legbghbkjcltq3kr3xn&st=7jas08r7&dl=0"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
+                                >
+                                    Resume
+                                </a>
+                            </div>
                         </div>
+
 
                     </div>
                 </div>
@@ -117,6 +132,13 @@ export default function NavBarTW() {
                                 {item.name}
                             </a>
                         ))}
+                        <a
+                            href="https://www.dropbox.com/scl/fi/uaawg9dbgb795pziyh055/EhretzGeskinResume_tech-1.pdf?rlkey=pynjx2legbghbkjcltq3kr3xn&st=7jas08r7&dl=0"
+                            target="_blank" rel="noopener noreferrer"
+                            className='text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium'
+                        >
+                            Resume
+                        </a>
                     </div>
                 </div>
             )}
