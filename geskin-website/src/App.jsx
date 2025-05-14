@@ -185,7 +185,7 @@ function App() {
               <div className="text-black mb-4 text-left space-y-2 text-sm">
                 <div className="flex items-center space-x-2">
                   <EnvelopeIcon className="w-4 h-4 text-blue-500" />
-                  <a href="mailto:ehretz.geskin@gmail.com" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">sg3584@alum.barnard.edu</a>
+                  <a href="mailto:ehretz.geskin@gmail.com" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">ehretz.geskin@gmail.com</a>
                 </div>
 
                 <div className="flex items-center space-x-2">
