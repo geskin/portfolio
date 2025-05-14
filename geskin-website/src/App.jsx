@@ -84,44 +84,6 @@ function App() {
             </div>
           </section>
 
-          {/* About Me Section */}
-          <section id="about" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
-            <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
-            <Typography className="max-w-3xl text-center sm:text-left">
-              I’m a junior software engineer with a background in neuroscience and behavior commited to building accessible, inclusive full-stack applications. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
-            </Typography>
-            <br />
-            <Typography className="max-w-3xl text-center sm:text-left">
-              Throughout my experience with full-stack development, I’ve gained the skills to build the tools I wish existed—platforms that promote emotional well-being, foster community, and center the needs of marginalized populations. I bring a unique blend of technical skill, scientific training, artistic sensibility, and empathy to everything I build. My goal is to leave behind a legacy of technology that uplifts, connects, and cares.
-            </Typography>
-          </section>
-
-          {/* Projects Section */}
-          <section id="projects" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
-            <Typography variant="h4" className='pt-10 sm:pt-0' gutterBottom>Projects</Typography>
-            <div className="max-w-3xl text-sm sm:text-base">
-              <ul className="space-y-4">
-                <li>
-                  <strong><a href="https://transconnect.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>TransConnect</a></strong>
-                  {' '}| <small><a href="https://github.com/geskin/transconnect-frontend/tree/master/transconnect" target="_blank" rel="noopener noreferrer">GitHub Frontend</a></small> | <small><a href="https://github.com/geskin/transconnect-backend" target="_blank" rel="noopener noreferrer">GitHub Backend</a></small>
-                  <p className="italic mt-1">Full-stack application that allows users to find and submit resources for transgender individuals (such as hotlines, therapists, shelters, public restrooms, etc), make posts, and comment on posts to engage with the community!</p>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li><b>Frontend:</b> React, JavaScript, Vite, mui</li>
-                    <li><b>Backend:</b> Prisma, Node.js, Express.js, PostgreSQL, JSON web token, Bcrypt, Morgan</li>
-                  </ul>
-                </li>
-                <li>
-                  <strong><a href="https://mentalgaming.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>MentalGaming</a></strong> | <small><a href="https://github.com/geskin/MentalGaming" target="_blank" rel="noopener noreferrer">GitHub</a></small>
-                  <p className="italic mt-1">Python/Flask-driven full-stack application that surveys users’ mental states before and after playing various browser games.</p>
-                  <ul className="list-disc ml-5 mt-1">
-                    <li><b>Frontend:</b> HTML, WTForms</li>
-                    <li><b>Backend:</b> Python, Flask, SQLAlchemy</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </section>
-
           {/* Skills Section */}
           <section id="skills" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" className='pt-10 sm:pt-2' gutterBottom>Skills</Typography>
@@ -167,6 +129,44 @@ function App() {
             </Box>
           </section>
 
+          {/* Projects Section */}
+          <section id="projects" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
+            <Typography variant="h4" className='pt-10 sm:pt-0' gutterBottom>Projects</Typography>
+            <div className="max-w-3xl text-sm sm:text-base">
+              <ul className="space-y-4">
+                <li>
+                  <strong><a href="https://transconnect.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>TransConnect</a></strong>
+                  {' '}| <small><a href="https://github.com/geskin/transconnect-frontend/tree/master/transconnect" target="_blank" rel="noopener noreferrer">GitHub Frontend</a></small> | <small><a href="https://github.com/geskin/transconnect-backend" target="_blank" rel="noopener noreferrer">GitHub Backend</a></small>
+                  <p className="italic mt-1">Full-stack application that allows users to find and submit resources for transgender individuals (such as hotlines, therapists, shelters, public restrooms, etc), make posts, and comment on posts to engage with the community!</p>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li><b>Frontend:</b> React, JavaScript, Vite, mui</li>
+                    <li><b>Backend:</b> Prisma, Node.js, Express.js, PostgreSQL, JSON web token, Bcrypt, Morgan</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong><a href="https://mentalgaming.onrender.com/" target="_blank" rel="noopener noreferrer" className='!underline'>MentalGaming</a></strong> | <small><a href="https://github.com/geskin/MentalGaming" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+                  <p className="italic mt-1">Python/Flask-driven full-stack application that surveys users’ mental states before and after playing various browser games.</p>
+                  <ul className="list-disc ml-5 mt-1">
+                    <li><b>Frontend:</b> HTML, WTForms</li>
+                    <li><b>Backend:</b> Python, Flask, SQLAlchemy</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* About Me Section */}
+          <section id="about" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-8">
+            <Typography variant="h4" className='sm:pt-2' gutterBottom>About Me</Typography>
+            <Typography className="max-w-3xl text-center sm:text-left">
+              I’m a software engineer with a background in neuroscience and behavior commited to building accessible, inclusive full-stack applications. My journey into software development was born out of a desire to merge creativity, science, and empathy—to make a tangible impact in the lives of individuals, especially those who face stigma and financial barriers.
+            </Typography>
+            <br />
+            <Typography className="max-w-3xl text-center sm:text-left">
+              Throughout my experience with full-stack development, I’ve gained the skills to build the tools I wish existed—platforms that promote emotional well-being, foster community, and center the needs of marginalized populations. I bring a unique blend of technical skill, scientific training, artistic sensibility, and empathy to everything I build. My goal is to leave behind a legacy of technology that uplifts, connects, and cares.
+            </Typography>
+          </section>
+
           {/* Education Section */}
           <section id="education" className="text-white dark:text-white min-h-screen snap-start flex flex-col justify-center items-center px-4 sm:px-6 py-4">
             <Typography variant="h4" gutterBottom>Education</Typography>
@@ -185,7 +185,7 @@ function App() {
               <div className="text-black mb-4 text-left space-y-2 text-sm">
                 <div className="flex items-center space-x-2">
                   <EnvelopeIcon className="w-4 h-4 text-blue-500" />
-                  <a href="mailto:sg3584@alum.barnard.edu" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">sg3584@alum.barnard.edu</a>
+                  <a href="mailto:ehretz.geskin@gmail.com" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">sg3584@alum.barnard.edu</a>
                 </div>
 
                 <div className="flex items-center space-x-2">
