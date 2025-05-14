@@ -102,7 +102,7 @@ export default function NavBarTW() {
                             {/* Right side: Resume link */}
                             <div className="ml-auto">
                                 <a
-                                    href="https://www.dropbox.com/scl/fi/uaawg9dbgb795pziyh055/EhretzGeskinResume_tech-1.pdf?rlkey=pynjx2legbghbkjcltq3kr3xn&st=7jas08r7&dl=0"
+                                    href="https://www.dropbox.com/scl/fi/4qa31hqhvxidhib61mblz/EhretzGeskinResume?rlkey=d1g9ih9ni0g1s6u8jxf8x7poa&st=6n8501cm&dl=0"
                                     target="_blank" rel="noopener noreferrer"
                                     className='text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium'
                                 >

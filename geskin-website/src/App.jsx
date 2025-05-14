@@ -200,7 +200,7 @@ function App() {
 
                 <div className="flex items-center space-x-2">
                   <LinkIcon className="w-4 h-4 text-blue-500" />
-                  <a href="https://www.dropbox.com/scl/fi/uaawg9dbgb795pziyh055/EhretzGeskinResume_tech-1.pdf?rlkey=pynjx2legbghbkjcltq3kr3xn&st=7jas08r7&dl=0" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">Resume</a>
+                  <a href="https://www.dropbox.com/scl/fi/4qa31hqhvxidhib61mblz/EhretzGeskinResume?rlkey=d1g9ih9ni0g1s6u8jxf8x7poa&st=6n8501cm&dl=0" className="!text-black hover:!text-blue-500" target="_blank" rel="noopener noreferrer">Resume</a>
                 </div>
               </div>
 
